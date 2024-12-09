@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    box-sizing: border-box;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../images/bk-black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 32;
+    font-weight: 500;
+    color: #d6a354;
+    margin-bottom: 20px;
+}
+.contact .content p{
+    font-size: 20;
+    font-weight: 300;
+    color: #ffff;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container p {
+    color: aliceblue;
+}
+
+.container h3 {
+    color: #c12828;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #d6a354;
+}
+.container .contactInfo .box .text {
+    display: flex;; 
+    margin-left: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    flex-direction: column;
+}
+
+.mapAndForm {
+    display: flex;
+    margin-top: 30px;
+}
+
+.map {
+    flex: 2;
+}
+
+.contactForm {
+    position: relative; /* Ensure the contact form is the reference for positioning */
+    flex: 2;
+    width: 40%;
+    padding: 40px;
+    background: #d6a354;
+    box-shadow: 0px 4px 10px darkred;
+}
+
+.contactForm::before {
+    position: absolute;
+    top: 20%; /* Adjust the vertical position relative to the form */
+    left: -2.7rem; /* Position it just outside the left edge of the form */
+    transform: translateY(-50%); /* Center the arrow vertically */
+    content: "";
+    width: 0;
+    height: 0;
+    border: 1.4rem solid transparent;
+    border-right: 1.4rem solid #d6a354; 
+}
+
+.contactForm h2{
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid darkred;
+    outline: none;
+    resize: none;
+}
+
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #d6a354; 
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: darkred;
+    font-size: 12px;
+    transform: translatey(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: darkred;
+    color:#d6a354;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+

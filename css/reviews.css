@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Gradient text effect */
+.gradient-text {
+    text-align: center;
+    font-size: 2em;
+    background: linear-gradient(to right, darkred, #d6a354);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Elfsight app style */
+.elfsight-app-e34d287f-d654-4d0e-b624-8e6fbb02fb0e {
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.7);
+}
+
+/* Light and dark theme customization */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure Tailwind's bg-white and bg-black work correctly */
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.text-white {
+    color: #d6a354;
+}
+
+.text-customGold {
+    color: #d6a354;
+}
+
+.dark .text-customGold {
+    color: #d6a354;
+}
+
+#theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #theme-toggle span {
+    transition: all 0.3s ease;
+  }
+  

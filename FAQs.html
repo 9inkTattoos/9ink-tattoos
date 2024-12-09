@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Add any custom animations here */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .group-open\:animate-fadeIn {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-customGold dark:bg-gray-900">
+    <div class="relative w-full bg-customGold px-6 pt-10 pb-8 mt-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
+        <div class="mx-auto px-5">
+            <div class="flex flex-col items-center">
+                <h2 class="mt-5 text-center text-3xl font-bold tracking-tight text-gray-800 dark:text-white md:text-5xl">FAQ</h2>
+                <p class="mt-3 text-lg text-neutral-500 md:text-xl">Frequently asked questions</p>
+            </div>
+            <div class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200 dark:divide-gray-700">
+                <!-- FAQ Items -->
+                <div class="py-5">
+                    <details class="group">
+                        <summary class="flex cursor-pointer list-none items-center justify-between font-medium text-gray-800 dark:text-gray-200">
+                            <span>Do I need to book an appointment, or do you accept walk-ins?</span>
+                            <span class="transition group-open:rotate-180">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <p class="group-open:animate-fadeIn mt-3 text-neutral-600 dark:text-neutral-400">
+                            We do accept walk-ins though one with an appointment is handled first therefore we recommend booking an appointment through our website and socials to not be inconvienced.
+                        </p>
+                    </details>
+                </div>
+                <!-- Repeat similar blocks for other FAQs -->
+                <!-- Example -->
+                <div class="py-5">
+                    <details class="group">
+                        <summary class="flex cursor-pointer list-none items-center justify-between font-medium text-gray-800 dark:text-gray-200">
+                            <span>What is the minimum age for getting a tattoo?</span>
+                            <span class="transition group-open:rotate-180">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <p class="group-open:animate-fadeIn mt-3 text-neutral-600 dark:text-neutral-400">
+                            We accept clients aged 18 and above for tattoos. For piercings, clients aged 18 and above are welcome, while those aged 6 months to 17 years can be accommodated if accompanied by a guardian.
+                        </p>
+                    </details>
+
+                    <div class="py-5">
+                        <details class="group">
+                            <summary class="flex cursor-pointer list-none items-center justify-between font-medium text-gray-800 dark:text-gray-200">
+                                <span>How do I schedule a consultation?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <p class="group-open:animate-fadeIn mt-3 text-neutral-600 dark:text-neutral-400">
+                                To schedule a consultation, simply visit our website at 9inktattoos.net. Navigate to the "Book an Appointment" section, click on "Book Now," and fill out the form. Once submitted, we will reach out to you. Alternatively, you can get in touch with us through our social media links available on the website.
+                            </p>
+                        </details>
+
+                        <div class="py-5">
+                            <details class="group">
+                                <summary class="flex cursor-pointer list-none items-center justify-between font-medium text-gray-800 dark:text-gray-200">
+                                    <span>Do you require a deposit? Is it refundable?</span>
+                                    <span class="transition group-open:rotate-180">
+                                        <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                            <path d="M6 9l6 6 6-6"></path>
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <p class="group-open:animate-fadeIn mt-3 text-neutral-600 dark:text-neutral-400">
+                                    Yes, we require a deposit to secure your appointment. This deposit is refundable in the event that the work is cancelled, or in cases of applicable circumstances. Please note that the refund will be processed based on our cancellation and refund policy.
+                                </p>
+                            </details>
+
+                            <div class="py-5">
+                                <details class="group">
+                                    <summary class="flex cursor-pointer list-none items-center justify-between font-medium text-gray-800 dark:text-gray-200">
+                                        <span>What safety and hygiene practices do you follow?</span>
+                                        <span class="transition group-open:rotate-180">
+                                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                                <path d="M6 9l6 6 6-6"></path>
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <p class="group-open:animate-fadeIn mt-3 text-neutral-600 dark:text-neutral-400">
+                                        At 9Ink Tattoos, we prioritize the safety and hygiene of our clients. Our studio follows strict industry-standard practices to ensure a clean and safe environment:
+
+<br>1. Sterilization: All our tools and equipment are thoroughly sterilized using autoclaves to eliminate any risk of infection.
+
+<br>2. Single-use Needles: We use single-use, disposable needles for each client, ensuring that there is no cross-contamination.
+
+<br>3. Cleanliness: The studio is cleaned and disinfected regularly, including surfaces, chairs, and all common areas.
+
+<br>4. Gloves and Protective Gear: Our artists wear disposable gloves and follow proper hygiene protocols throughout the tattooing or piercing process.
+
+<br>5. Licensed and Experienced Artists: All our artists are certified professionals who adhere to the highest standards of health and safety.
+<br>
+<br>Your health and well-being are our top priority, and we take every precaution to ensure a safe and hygienic experience.
+</p>
+                                </details>
+
+                                <div class="py-5">
+                                    <details class="group">
+                                        <summary class="flex cursor-pointer list-none items-center justify-between font-medium text-gray-800 dark:text-gray-200">
+                                            <span>Does getting a tattoo hurt?</span>
+                                            <span class="transition group-open:rotate-180">
+                                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                                    <path d="M6 9l6 6 6-6"></path>
+                                                </svg>
+                                            </span>
+                                        </summary>
+                                        <p class="group-open:animate-fadeIn mt-3 text-neutral-600 dark:text-neutral-400">
+                                            Getting a tattoo can cause some discomfort, as the process involves needles piercing the skin. Pain levels vary depending on the tattoo's location, size, and your pain tolerance. Our artists ensure a comfortable experience, with options to manage pain if needed.
+                                        </p>
+                                    </details>
+
+                                    <div class="py-5">
+                                        <details class="group">
+                                            <summary class="flex cursor-pointer list-none items-center justify-between font-medium text-gray-800 dark:text-gray-200">
+                                                <span>What should I avoid while my tattoo is healing?</span>
+                                                <span class="transition group-open:rotate-180">
+                                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                                        <path d="M6 9l6 6 6-6"></path>
+                                                    </svg>
+                                                </span>
+                                            </summary>
+                                            <p class="group-open:animate-fadeIn mt-3 text-neutral-600 dark:text-neutral-400">
+                                                While your tattoo is healing, avoid direct sun exposure, swimming, and tight clothing that may irritate the area. Do not scratch or pick at the tattoo, as this can cause infection or scarring. Keep it clean and moisturized, and follow aftercare instructions carefully as given by our tattoo Artists.
+                                            </p>
+                                        </details>
+
+                                        <div class="py-5">
+                                            <details class="group">
+                                                <summary class="flex cursor-pointer list-none items-center justify-between font-medium text-gray-800 dark:text-gray-200">
+                                                    <span>Can I get a tattoo over scars or stretch marks?</span>
+                                                    <span class="transition group-open:rotate-180">
+                                                        <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                                            <path d="M6 9l6 6 6-6"></path>
+                                                        </svg>
+                                                    </span>
+                                                </summary>
+                                                <p class="group-open:animate-fadeIn mt-3 text-neutral-600 dark:text-neutral-400">
+                                                    Yes, tattoos can be done over scars or stretch marks, but it's important to assess the skin's condition first. We do not work on pregnant women or tattoos over wounds that have not fully healed or recovered. A consultation is recommended to ensure the best results.
+                                                </p>
+                                            </details>
+
+                                            <div class="py-5">
+                                                <details class="group">
+                                                    <summary class="flex cursor-pointer list-none items-center justify-between font-medium text-gray-800 dark:text-gray-200">
+                                                        <span>What happens if I’m unhappy with my tattoo? Can it be fixed?</span>
+                                                        <span class="transition group-open:rotate-180">
+                                                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                                                <path d="M6 9l6 6 6-6"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </summary>
+                                                    <p class="group-open:animate-fadeIn mt-3 text-neutral-600 dark:text-neutral-400">
+                                                        If you're unhappy with your tattoo, we want to make it right. Our artists will work with you to assess the situation, and in many cases, adjustments or touch-ups can be made to ensure you're satisfied. Your satisfaction is our priority, and we'll do our best to fix any concerns you have.
+                                                    </p>
+                                                </details>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

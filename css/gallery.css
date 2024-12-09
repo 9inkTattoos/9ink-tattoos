@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+main {
+  margin-bottom:5em;
+}
+
+ [x-cloak] {
+  display: none;
+}
+
+
+:root {
+    --c-bg: snow;
+    --c-scrollbar: lightsteelblue;
+    --c-scrollbar-hover: #000;
+}
+html {
+  background-color: var(--c-bg);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+html.dark {
+    --c-bg: #050505;
+    --c-scrollbar: #111;
+    --c-scrollbar-hover: #222;
+}
+
+body {
+  background-color: var(--c-bg);
+  color: var(--c-text);
+  display: flex;  /* Flex container */
+  flex-direction: column; /* Stack elements vertically */
+  height: 100%; /* Ensure body takes full height */
+}
+body.dark {
+    background-color: #000;
+  }
+
+::selection {
+  background: #8884;
+}
+* {
+  scrollbar-color: var(--c-scrollbar) var(--c-bg);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
+  background: var(--c-bg);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--c-scrollbar);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-scrollbar-hover);
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.dark .grid img {
+    background-color: #d6a354; /* Example background for dark mode */
+  }
+
+  h1 {
+    transition: color 0.3s ease, background-image 0.3s ease;
+  }
+  
+  .dark h1 {
+    color: #ffffff;
+  }
+  
+  .dark .gallery img {
+    filter: brightness(0.8);
+  }
+
+  html, body {
+    height: auto; 
+    overflow-y: auto; 
+}
+
+.custom-download-button {
+  background-color: #d6a354;
+  color: darkred;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-download-button:hover {
+  background-color: #c89548; /* Slightly darker for hover effect */
+  color: maroon; /* Slightly darker text */
+}
+
+
+  
+
+
+
+  /* Footer Styles */
+footer {
+  background-color:#d6a354 ;
+  color: #fff;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: darkred;
+  font-weight: 500;
+}
+
+.footer-section .bi-shop{
+  color: darkred;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: darkred; /* Change color on hover */
+}
+
+.social-links {
+  display: flex; /* Ensure flexbox for layout control */
+  gap: 15px; /* Space between icons */
+  scale: 2; /* Keep the scale for larger icons */
+  justify-content: flex-end; /* Align the icons to the right */
+  margin-right: 230px; /* Add spacing from the right edge of the page */
+}
+
+.social-links li a {
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: darkred; 
+}
+
+/* Map Container */
+#map-container iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  background-color: #222;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #f1f1f1;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .footer-section {
+      flex: 1 1 100%;
+      text-align: center;
+  }
+}

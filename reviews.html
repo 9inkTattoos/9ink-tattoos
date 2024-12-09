@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9Ink Tattoos Studio Client Reviews</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="css/reviews.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
+
+</head>
+<body x-data="{ darkMode: false }" :class="{ 'dark': darkMode }">
+  <!-- Theme Toggle Button -->
+  <header class="flex justify-end p-4">
+    <button 
+        @click="darkMode = !darkMode" 
+        class="p-2 rounded-full border-2 border-gray-300 bg-gray-100 dark:bg-gray-800 dark:border-gray-600"
+        :aria-label="darkMode ? 'Switch to light mode' : 'Switch to dark mode'">
+        <span x-text="darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'" class="text-sm"></span>
+    </button>
+</header>
+
+  <!-- Section 1 -->
+  <section class="flex justify-center items-center w-screen h-screen ">
+    <h1
+      class="text-customGold font-extrabold relative w-full xl:text-9xl md:text-8xl text-5xl sm:tracking-[17px] tracking-[10px] uppercase text-center leading-[0.70em] outline-none animate-anim box-reflect">
+      9Ink Tattoos Studio
+    
+    </h1>
+    <h3>
+      
+    </h3>
+  </section>
+
+  <!-- Section 2 -->
+  <h1 class="gradient-text">
+    9Ink Tattoos Studio Client Reviews
+  </h1>
+  <div class="elfsight-app-e34d287f-d654-4d0e-b624-8e6fbb02fb0e" data-elfsight-app-lazy></div>
+  
+  
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <script src="js/tailwind.config.js" defer></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
+
+</body>
+</html>
+
+

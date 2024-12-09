@@ -164,11 +164,11 @@ footer {
 }
 
 .social-links {
-  display: flex; /* Ensure flexbox for layout control */
+  display: absolute; /* Ensure flexbox for layout control */
   gap: 15px; /* Space between icons */
-  scale: 2; /* Keep the scale for larger icons */
+  scale: 1; /* Keep the scale for larger icons */
   justify-content: flex-end; /* Align the icons to the right */
-  margin-right: 230px; /* Add spacing from the right edge of the page */
+  margin-right: 85px; /* Add spacing from the right edge of the page */
 }
 
 .social-links li a {

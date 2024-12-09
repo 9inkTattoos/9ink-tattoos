@@ -263,7 +263,7 @@ strong {
   bottom: 0;
   left: 0;
   z-index: 100;
-  padding: 50px 0 0;
+  padding: 50px 0 0 0;
 }
 
 .sidebar-sticky {
@@ -272,6 +272,7 @@ strong {
   overflow-y: auto;
   text-align: center;
   position: relative;
+  display: flex;
 }
 
 .navbar {
@@ -301,7 +302,7 @@ strong {
 .navbar-toggler {
   background: var(--primary-color);
   border-radius: var(--border-radius-large);
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
@@ -598,6 +599,28 @@ strong {
   padding: 0;
 }
 
+/*---------------------------------------
+  MAP              
+-----------------------------------------*/
+.map-container {
+  position: relative;
+  width: 100%; /* Ensures the container spans the width of its parent */
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio (adjust if needed) */
+  height: 0; /* Maintain aspect ratio */
+  overflow: hidden;
+  border: 1px solid #ddd; /* Optional: Add border to distinguish the map */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  border: 0; /* Remove iframe border */
+}
+
+
 
 /*---------------------------------------
   BOOKING               
@@ -876,3 +899,25 @@ strong {
   }
 }
 
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    left: 10px; 
+    top: 20px; 
+  }
+
+  .sidebar {
+    width: 250px; 
+  }
+
+  .sidebar-sticky {
+    align-items: flex-start; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .map-container {
+    padding-bottom: 75%; 
+  }
+}

@@ -167,3 +167,36 @@
 
 
 
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .container {
+        flex-direction: column; /* Stack the elements vertically */
+    }
+
+    .container .contactInfo,
+    .mapAndForm {
+        width: 100%; /* Full width on small devices */
+    }
+
+    .mapAndForm {
+        flex-direction: column; /* Stack map and form vertically */
+    }
+
+    .map,
+    .contactForm {
+        width: 100%; /* Full width for both map and form */
+        margin-bottom: 20px; /* Add spacing between elements */
+    }
+
+    .contactForm h2 {
+        font-size: 36px; /* Adjust heading size for smaller screens */
+    }
+
+    .contactForm .inputBox input,
+    .contactForm .inputBox textarea {
+        font-size: 14px; /* Smaller text for smaller screens */
+    }
+}
